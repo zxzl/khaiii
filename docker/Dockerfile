@@ -1,7 +1,7 @@
 FROM pytorch/pytorch:latest
 MAINTAINER nako.sung@navercorp.com
 
-RUN git clone https://github.com/kakao/khaiii.git
+RUN git clone -b develop https://github.com/kakao/khaiii.git
 WORKDIR /workspace/khaiii
 
 RUN pip install cython

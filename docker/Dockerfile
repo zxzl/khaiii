@@ -46,5 +46,5 @@ ENV PYTHONIOENCODING=utf8
 RUN pip3 install jupyter
 EXPOSE 8888
 WORKDIR /workspace/khaiii/build
-ENTRYPOINT ["jupyter", "notebook", "--ip=0.0.0.0", "--allow-root"]
+ENTRYPOINT ["jupyter", "notebook", "--ip=0.0.0.0", "--allow-root", "--no-browser"]
 
